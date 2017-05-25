@@ -27,7 +27,7 @@ def main(product, interface):
         echo('Product not found')
 
     os.chdir(os.path.join('/home/neurotinker', product, 'FIRMWARE'))
-    make_process = subprocess.Popen("make main.stlink-flash")
+    make_process = subprocess.Popen("make")
 
 
 if __name__ == '__main__':
