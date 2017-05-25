@@ -1,0 +1,6 @@
+#!/bin/bash
+
+git config --file=.gitmodules libopencm3.Submod.url https:github.com/NeuroTinker/libopencm3
+git config --file=.gitmodules libopencm3.Submod.branch Dev
+git submodule sync
+git submodule update --init --recursive --remote
